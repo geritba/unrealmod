@@ -1,18 +1,19 @@
 module "third/geoip"
 {
 	description "Geoip";
-	version "2.1.0";
-	author "Gottem";
-	documentation "https://gottem.nl/unreal/man";
-	troubleshooting "In case of problems, check the FAQ at https://gottem.nl/unreal/halp or e-mail me at support@gottem.nl";
-	source "https://github.com/geritba/unrealmod/blob/main/geoip.c";
+	version "5.0.1";
+	author "k4be@PIRC";
+	documentation "https://github.com/pirc-pl/unrealircd-modules/blob/master/README.md#extjwt";
+	troubleshooting "In case of problems, contact k4be on irc.pirc.pl.";
+	source "https://raw.githubusercontent.com/geritba/unrealmod/main/geoip.c";
 	sha256sum "8c61aac06fa2c072f40c424660626a65d48c90932864913f5b852a12f935c2e5";
 	min-unrealircd-version "5.*";
 	post-install-text
 	{
-		"The module is installed, now all you need to do is add a 'loadmodule' line to your config file:";
+		"The module is installed. Now all you need to do is add a loadmodule line:";
 		"loadmodule \"third/geoip\";";
-		"Then /rehash the IRCd.";
-		"For usage information, refer to the module's documentation found at: https://gottem.nl/unreal/man";
+		"And create relevant config block, then /REHASH the IRCd.";
+		"The configuration is described in the documentation:";
+		"https://github.com/pirc-pl/unrealircd-modules/blob/master/README.md#extjwt";
 	}
 }
