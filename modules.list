@@ -5,7 +5,7 @@ module "third/geoip"
 	author "Gottem";
 	documentation "https://gottem.nl/unreal/man";
 	troubleshooting "In case of problems, check the FAQ at https://gottem.nl/unreal/halp or e-mail me at support@gottem.nl";
-	source "https://github.com/geritba/unrealmod/geoip.c";
+	source "https://github.com/geritba/unrealmod/blob/main/geoip.c";
 	sha256sum "8c61aac06fa2c072f40c424660626a65d48c90932864913f5b852a12f935c2e5";
 	min-unrealircd-version "5.*";
 	post-install-text
